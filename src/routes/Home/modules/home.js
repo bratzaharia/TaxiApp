@@ -6,7 +6,7 @@ const { SET_NAME } = constants;
 export function setName() {
     return {
         type: SET_NAME,
-        payload:"Ciprian Brat1"
+        payload:"Ciprian Brat from routes - Home - modules"
     }
 }
 
