@@ -1,5 +1,9 @@
 import React from "react";
-import { View, Text } from "react-native";
+// import { View, Text } from "react-native";
+
+import {Container} from "native-base";
+
+import MapContainer from "./MapContainer";
 
 class Home extends React.Component {
 
@@ -8,10 +12,17 @@ class Home extends React.Component {
     }
 
     render() {
+        const region = {
+            latitude: 37.78825,
+         longitude: -122.4324,
+         latitudeDelta: 0.01,
+         longitudeDelta: 0.01
+        }
         return(
-        <View style={{flex:1, justifyContent: "center", alignItems: "center"}}>
-            <Text>Hi {this.props.name}</Text>
-        </View>
+        <Container style={{flex:1, justifyContent: "center", alignItems: "center"}}>
+            {/* <Text>Hi {this.props.name}</Text> */}
+            <MapContainer region={region}/>
+        </Container>
         );
     }
 }
