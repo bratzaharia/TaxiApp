@@ -14,13 +14,12 @@ class Home extends React.Component {
     render() {
         const region = {
             latitude: 37.78825,
-         longitude: -122.4324,
-         latitudeDelta: 0.01,
-         longitudeDelta: 0.01
+            longitude: -122.4324,
+            latitudeDelta: 0.01,
+            longitudeDelta: 0.01
         }
         return(
         <Container style={{flex:1, justifyContent: "center", alignItems: "center"}}>
-            {/* <Text>Hi {this.props.name}</Text> */}
             <MapContainer region={region}/>
         </Container>
         );
